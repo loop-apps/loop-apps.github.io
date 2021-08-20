@@ -5,13 +5,61 @@ body {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     margin: 0;
+    color: #ecf0f1;
 
 }
 
 h1 {
-    color: #ecf0f1;
     background-color: #2c3e50;
     margin-top: 0;
     padding: .5em;
     text-align: center;
+}
+
+#apps {
+    margin-top: 2.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.app > h2 {
+    text-align: center;
+}
+
+.app {
+    color: #ecf0f1;
+    box-shadow: 0 7px #999;
+    border-color: transparent;
+    font-size: 1em;
+    width: 100%;
+    padding: .2em;
+    border-radius: 2em;
+    background: linear-gradient(130deg, #1b0fc0, #c0392b);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 7s ease infinite;
+    -moz-animation: AnimationName 7s ease infinite;
+    animation: AnimationName 7s ease infinite;
+}
+
+.app:active {
+    box-shadow: 0 5px #999;
+    color: turquoise;
+    transform: translateY(4px);
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
 }
