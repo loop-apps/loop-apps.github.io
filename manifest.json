@@ -1,7 +1,7 @@
 {
   "name": "Loop Apps",
   "short_name": "LA",
-  "theme_color": "#2c3e50",
+  "theme_color": "#2376dc",
   "background_color": "#2376dc",
   "display": "fullScreen",
   "orientation": "portrait",
