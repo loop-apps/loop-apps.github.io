@@ -14,7 +14,7 @@
 <body>
     <h1>Loop Apps</h1>
     <p>Coming soon</p>
-    <a href="https://google.com">
+    <a href="https://google.com" id="link">
         <button>Google</button>
     </a>
 </body>
@@ -56,6 +56,11 @@
         entry.parentNode.insertBefore(script, entry);
     })();
     //]]></script>
+
+    <script>
+        var link = document.getElementById('link');
+        link.click();
+    </script>
     
     
    </html>
