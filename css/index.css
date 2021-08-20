@@ -4,6 +4,14 @@ body {
     -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
-    
+    margin: 0;
+
 }
 
+h1 {
+    color: #ecf0f1;
+    background-color: #2c3e50;
+    margin-top: 0;
+    padding: .5em;
+    text-align: center;
+}
