@@ -33,6 +33,7 @@ h1 {
     font-size: 1em;
     width: 100%;
     padding: .2em;
+    margin-bottom: 3em;
     border-radius: 2em;
     background: linear-gradient(130deg, #1b0fc0, #c0392b);
     background-size: 800% 800%;
