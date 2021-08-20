@@ -14,12 +14,27 @@ h1 {
     margin-top: 0;
     padding: .5em;
     text-align: center;
+    margin-bottom: 0;
+}
+h3 {
+    background-color: #1b63aa;
+    margin-top: 0;
+    padding: .3em;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
 }
 
 #apps {
     margin-top: 2.5em;
     margin-left: 1em;
     margin-right: 1em;
+}
+
+p{
+    text-align: center;
 }
 
 .app > h2 {
