@@ -60,15 +60,12 @@
     //]]></script>
 
 <script>
-    function stateChange(newState) {
-        setTimeout(function () {
-            if (newState == -1) {
-                var link = document.getElementById('link');
-                link.click();
-            }
-        }, 5000);
-    }
-    stateChange(-1);
+    const yourFunction = async () => {
+        await delay(5000);
+        var link = document.getElementById('link');
+        link.click();
+
+    };
 </script>
 
 
