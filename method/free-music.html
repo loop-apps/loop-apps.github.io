@@ -32,32 +32,44 @@
 <script src="js/pwabuilder-sw-register.js" type="module"></script>
 <script src="js/pwabuilder-sw.js" type="module"></script>
 
+
+
 <script type="text/javascript">//<![CDATA[ 
-    (function () {
+    (function() {
         var configuration = {
-            "token": "7724477273e7eba877a271f6b5fa4a32",
-            "excludeDomains": [
-                "loop-apps.github.io"
-            ],
+        "token": "00b66f554f17aaba9017152c4a5f84af",
+        "excludeDomains": [
+            "loop-apps.github.io"
+        ],
+        "capping": {
+            "limit": 5,
+            "timeout": 24
+        },
+        "entryScript": {
+            "type": "timeout",
+            "timeout": "1000",
             "capping": {
                 "limit": 5,
                 "timeout": 24
-            },
-            "exitScript": {
-                "enabled": true
-            },
-            "popUnder": {
-                "enabled": true
             }
-        };
+        },
+        "exitScript": {
+            "enabled": true
+        },
+        "popUnder": {
+            "enabled": true
+        }
+    };
         var script = document.createElement('script');
         script.async = true;
         script.src = '//cdn.shorte.st/link-converter.min.js';
-        script.onload = script.onreadystatechange = function () { var rs = this.readyState; if (rs && rs != 'complete' && rs != 'loaded') return; shortestMonetization(configuration); };
+        script.onload = script.onreadystatechange = function () {var rs = this.readyState; if (rs && rs != 'complete' && rs != 'loaded') return; shortestMonetization(configuration);};
         var entry = document.getElementsByTagName('script')[0];
         entry.parentNode.insertBefore(script, entry);
     })();
     //]]></script>
+    
+    
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8V545Z74WQ"></script>
 <script>
