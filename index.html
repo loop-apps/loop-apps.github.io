@@ -15,58 +15,40 @@
 
 <body>
     <h1>Loop Apps</h1>
-    <p>Coming soon</p>
-    <a href="http://gestyy.com/eoN25l" id="link">
-        <button>Google</button>
-    </a>
 </body>
 <script src="js/pwabuilder-sw-register.js" type="module"></script>
 <script src="js/pwabuilder-sw.js" type="module"></script>
 
 
+
+
 <script type="text/javascript">//<![CDATA[ 
-    (function () {
+    (function() {
         var configuration = {
-            "token": "7724477273e7eba877a271f6b5fa4a32",
-            "excludeDomains": [
-                ""
-            ],
-            "capping": {
-                "limit": 5,
-                "timeout": 0
-            },
-            "entryScript": {
-                "type": "timeout",
-                "timeout": 3000,
-                "capping": {
-                    "limit": 5,
-                    "timeout": 0
-                }
-            },
-            "exitScript": {
-                "enabled": true
-            },
-            "popUnder": {
-                "enabled": true
-            }
-        };
+        "token": "7724477273e7eba877a271f6b5fa4a32",
+        "excludeDomains": [
+            "notbest.github.io"
+        ],
+        "capping": {
+            "limit": 5,
+            "timeout": 24
+        },
+        "exitScript": {
+            "enabled": true
+        },
+        "popUnder": {
+            "enabled": true
+        }
+    };
         var script = document.createElement('script');
         script.async = true;
         script.src = '//cdn.shorte.st/link-converter.min.js';
-        script.onload = script.onreadystatechange = function () { var rs = this.readyState; if (rs && rs != 'complete' && rs != 'loaded') return; shortestMonetization(configuration); };
+        script.onload = script.onreadystatechange = function () {var rs = this.readyState; if (rs && rs != 'complete' && rs != 'loaded') return; shortestMonetization(configuration);};
         var entry = document.getElementsByTagName('script')[0];
         entry.parentNode.insertBefore(script, entry);
     })();
     //]]></script>
-
-<script>
-    const yourFunction = async () => {
-        await delay(025);
-        var link = document.getElementById('link');
-        link.click();
-
-    };
-</script>
-
+    
+    
 
 </html>
